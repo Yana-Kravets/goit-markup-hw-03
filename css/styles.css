@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
@@ -28,6 +38,8 @@ body {
 }
 
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -51,6 +63,16 @@ body {
 
 .header {
     background-color: var(--main-light);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 2px solid tomato;
+
 }
 
 .nav {}
@@ -96,12 +118,15 @@ body {
 /* Hero section*/
 
 .hero {
+    text-align: center;
+
     background-color: var(--secondary-background);
 }
 
-.hero-container {}
-
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -132,16 +157,25 @@ body {
 /* About section */
 
 .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--main-light);
 }
 
-.about-container {}
+.hidden-title {
+    margin: 0;
+    padding: 0;
+}
 
 .about-list {}
 
-.about-item {}
+.about-item {
+}
 
 .about-title {
+    margin-bottom: 10px;
+
     font-size: var(--text-size);
     line-height: 1.1;
     text-transform: uppercase;
@@ -157,10 +191,14 @@ body {
 /* Wedo section */
 
 .wedo {
+    padding-bottom: 94px;
+
     background-color: var(--main-light);
 }
 
 .section-title {
+    text-align: center;
+
     font-size: var(--title-size);
     line-height: 1.2;
 }
@@ -173,7 +211,10 @@ body {
 
 /* Team section */
 
-.team {}
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .team-list {}
 
