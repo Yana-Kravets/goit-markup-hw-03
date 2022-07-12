@@ -40,6 +40,7 @@ body {
 .list {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
@@ -71,7 +72,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 2px solid tomato;
 }
 
 .page-header {
@@ -114,6 +114,7 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -140,6 +141,7 @@ body {
 .contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -159,6 +161,7 @@ body {
     margin-top: 0;
     margin-bottom: 30px;
 
+    white-space: pre-line;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -170,6 +173,7 @@ body {
 
 .hero-btn {
     padding: 10px 32px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -233,6 +237,7 @@ body {
 .about-text {
     margin-top: 0;
     margin-bottom: 0;
+
     line-height: 1.7;
 
     color: var(--secondary-color);
@@ -287,6 +292,7 @@ body {
 .team-item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+
     background-color: var(--main-light);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -304,6 +310,7 @@ body {
 .team-name {
     margin-top: 0;
     margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -313,8 +320,10 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.2;
+
     color: var(--secondary-color);
 }
 
@@ -322,25 +331,29 @@ body {
 
 .portfolio {
     padding: 94px 0;
+
     background-color: var(--main-light);
 }
 
 .filter-list {
     display: flex;
+    justify-content: center;
     padding-bottom: 50px;
 }
 
-.filter-item {
+.filter-list .filter-item + .filter-item {
     margin-left: 8px;
 }
 
 .filter-btn {
     padding: 6px 22px;
+
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    
     color: var(--primary-color);
     border-radius: 4px;
 }
@@ -368,6 +381,7 @@ body {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+
     background-color: var(--main-light);
     border: 1px solid var(--border-color);
 }
@@ -391,9 +405,11 @@ body {
     margin-top: 0;
     padding: 0 24px;
     margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
     color: var(--primary-color);
 }
 
@@ -401,7 +417,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0 24px 20px;
+
     line-height: 1.9;
+
     color: var(--secondary-color);
 }
 
@@ -409,6 +427,11 @@ body {
 
 .footer {
     background-color: var(--secondary-background);
+}
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -425,7 +448,17 @@ body {
     color: var(--accent-color);
 }
 
-.address {}
+.address {
+    margin-top: 20px;
+}
+
+.address-item {
+    margin-bottom: 9px;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
+}
 
 .address-contact {
     text-decoration: none;
@@ -439,6 +472,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
+    
     color: var(--main-light);
     opacity: .6;
 }
