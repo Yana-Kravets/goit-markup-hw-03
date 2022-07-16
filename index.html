@@ -52,8 +52,8 @@
     <main>
 
         <!-- Hero section-->
-        <section class="hero">
-            <div class="hero-container">
+        <section class="section hero">
+            <div class="container">
                 <h1 class="hero-title">Эффективные решения 
                     для вашего бизнеса</h1>
                 <button type="button" class="button hero-btn">Заказать услугу</button>
@@ -61,7 +61,7 @@
         </section>
 
         <!-- About section-->
-        <section class="about">
+        <section class="section about">
             <h2 class="visually-hidden">Преимущества</h2>
             <div class="container">
                 <ul class="list about-list">
@@ -90,7 +90,7 @@
         </section>
 
         <!-- Wedo section-->
-        <section class="wedo">
+        <section class="section wedo">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list wedo-list">
@@ -110,33 +110,41 @@
         </section>
 
         <!-- Team section-->
-        <section class="team">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-item">
                         <img class="team-img" src="./images/studio/team-member1.jpg" alt="Игорь Демьяненко Product Designer"
                             width="270" height="260">
-                        <h3 class="team-name">Игорь Демьяненко</h3>
-                        <p class="team-profession">Product Designer</p>
+                        <div class="team-card-wrapper">
+                            <h3 class="team-name">Игорь Демьяненко</h3>
+                            <p class="team-profession">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img" src="./images/studio/team-member2.jpg" alt="Ольга Репина Frontend Developer"
                             width="270" height="260">
-                        <h3 class="team-name">Ольга Репина</h3>
-                        <p class="team-profession">Frontend Developer</p>
+                        <div class="team-card-wrapper">
+                            <h3 class="team-name">Ольга Репина</h3>
+                            <p class="team-profession">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img" src="./images/studio/team-member3.jpg" alt="Николай Тарасов Marketing"
                             width="270" height="260">
-                        <h3 class="team-name">Николай Тарасов</h3>
-                        <p class="team-profession">Marketing</p>
+                        <div class="team-card-wrapper">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p class="team-profession">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img" src="./images/studio/team-member4.jpg" alt="Михаил Ермаков UI Designer"
                             width="270" height="260">
-                        <h3 class="team-name">Михаил Ермаков</h3>
-                        <p class="team-profession">UI Designer</p>
+                        <div class="team-card-wrapper">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p class="team-profession">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -147,7 +155,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container page-footer">
+        <div class="container">
             <a class="footer-logo" href="./index.html"><span class="footer-text">Web</span>Studio</a>
             <address class="address">
                 <ul class="list address-list">
