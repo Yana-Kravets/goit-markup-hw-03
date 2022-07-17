@@ -17,6 +17,16 @@
     --text-size: 14px;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
 /* Common */
 
 body {
